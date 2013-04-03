@@ -19,6 +19,7 @@
         self = [[[NSBundle mainBundle] loadNibNamed:@"CoffeeProgressBar" owner:self options:nil] objectAtIndex:0];
         
         [self setLabelShadow];
+        [self setViewShadow];
     }
     return self;
 }
@@ -30,6 +31,7 @@
         self = [[[NSBundle mainBundle] loadNibNamed:@"CoffeeProgressBar" owner:self options:nil] objectAtIndex:0];
        
         [self setLabelShadow];
+        [self setViewShadow];
     }
     return self;
 }
@@ -52,6 +54,14 @@
     self.progressLabel.layer.shadowOffset = CGSizeMake(1.0f,1.0f);
     self.progressLabel.layer.shadowOpacity = .5f;
     self.progressLabel.layer.shadowRadius = 1.0f;
+}
+
+-(void)setViewShadow
+{
+    self.layer.shadowColor = [[UIColor blackColor] CGColor];
+    self.layer.shadowOffset = CGSizeMake(1.0f,1.0f);
+    self.layer.shadowOpacity = .5f;
+    self.layer.shadowRadius = 1.0f;
 }
 
 @end
