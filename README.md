@@ -1,7 +1,7 @@
 CoffeeProgressBar for iOS
 ======================
 
-![CoffeeProgressBar](https://github.com/araujoraphael/CoffeeProgressBar/blob/master/img/image01.png)
+![CoffeeProgressBar](https://github.com/araujoraphael/CoffeeProgressBar/raw/master/img/image01.png)
 
 
 Why another Progress View?
