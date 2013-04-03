@@ -6,9 +6,15 @@
 //  Copyright (c) 2013 Raphael Araujo. All rights reserved.
 //
 
+#import <QuartzCore/QuartzCore.h>
 #import "ViewController.h"
 
 @interface ViewController ()
+
+@property (nonatomic, strong) CoffeeProgressBar *cfPbar;
+@property (nonatomic, strong) IBOutlet UISlider *slider;
+
+-(IBAction)setCfBarProgress:(id)sender;
 
 @end
 
@@ -17,13 +23,33 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+    self.cfPbar = [[CoffeeProgressBar alloc] init];
+    
+    CGRect cfPbarframe = self.cfPbar.frame;
+    self.cfPbar.frame = CGRectMake(90, 200, cfPbarframe.size.width, cfPbarframe.size.height);
+    self.cfPbar.progress = floor(self.slider.value * 100);
+    
+    self.cfPbar.layer.shadowColor = [[UIColor blackColor] CGColor];
+    self.cfPbar.layer.shadowOffset = CGSizeMake(1.0f,1.0f);
+    self.cfPbar.layer.shadowOpacity = .5f;
+    self.cfPbar.layer.shadowRadius = 1.0f;
+
+    
+    [self.view addSubview:self.cfPbar];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(IBAction)setCfBarProgress:(id)sender
+{
+    NSInteger numb = floor(((UISlider *)sender).value * 100);
+    self.cfPbar.progress = numb;
+    [self.cfPbar setProgress:numb];
 }
 
 @end

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41A88F99170BCF16009AA4BE /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 41A88F98170BCF16009AA4BE /* LICENSE.txt */; };
+		41A88F9B170BD007009AA4BE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 41A88F9A170BD007009AA4BE /* README.md */; };
 		41D9CB8C170B924D00A20D65 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41D9CB8B170B924D00A20D65 /* UIKit.framework */; };
 		41D9CB8E170B924D00A20D65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41D9CB8D170B924D00A20D65 /* Foundation.framework */; };
 		41D9CB90170B924D00A20D65 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41D9CB8F170B924D00A20D65 /* CoreGraphics.framework */; };
@@ -23,6 +25,12 @@
 		41D9CBB2170B924D00A20D65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41D9CB8D170B924D00A20D65 /* Foundation.framework */; };
 		41D9CBBA170B924D00A20D65 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 41D9CBB8170B924D00A20D65 /* InfoPlist.strings */; };
 		41D9CBBD170B924D00A20D65 /* CoffeeProgressBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D9CBBC170B924D00A20D65 /* CoffeeProgressBarTests.m */; };
+		41D9CBC9170B94AB00A20D65 /* CoffeeProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D9CBC8170B94AB00A20D65 /* CoffeeProgressBar.m */; };
+		41D9CBCB170B94CA00A20D65 /* CoffeeProgressBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41D9CBCA170B94CA00A20D65 /* CoffeeProgressBar.xib */; };
+		41D9CBD1170B96B300A20D65 /* progress_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 41D9CBCD170B96B300A20D65 /* progress_bg.png */; };
+		41D9CBD2170B96B300A20D65 /* progress_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 41D9CBCE170B96B300A20D65 /* progress_top.png */; };
+		41D9CBD3170B96B300A20D65 /* progress_top@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41D9CBCF170B96B300A20D65 /* progress_top@2x.png */; };
+		41D9CBD4170B96B300A20D65 /* progress_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41D9CBD0170B96B300A20D65 /* progress_bg@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		41A88F98170BCF16009AA4BE /* LICENSE.txt */ = {isa = PBXFileReference; explicitFileType = text; fileEncoding = 4; lineEnding = 2; path = LICENSE.txt; sourceTree = "<group>"; };
+		41A88F9A170BD007009AA4BE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		41D9CB88170B924D00A20D65 /* CoffeeProgressBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeProgressBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41D9CB8B170B924D00A20D65 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		41D9CB8D170B924D00A20D65 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -58,6 +68,13 @@
 		41D9CBB9170B924D00A20D65 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		41D9CBBB170B924D00A20D65 /* CoffeeProgressBarTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoffeeProgressBarTests.h; sourceTree = "<group>"; };
 		41D9CBBC170B924D00A20D65 /* CoffeeProgressBarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoffeeProgressBarTests.m; sourceTree = "<group>"; };
+		41D9CBC7170B94AB00A20D65 /* CoffeeProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoffeeProgressBar.h; path = Classes/CoffeeProgressBar.h; sourceTree = "<group>"; };
+		41D9CBC8170B94AB00A20D65 /* CoffeeProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoffeeProgressBar.m; path = Classes/CoffeeProgressBar.m; sourceTree = "<group>"; };
+		41D9CBCA170B94CA00A20D65 /* CoffeeProgressBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CoffeeProgressBar.xib; path = Classes/CoffeeProgressBar.xib; sourceTree = "<group>"; };
+		41D9CBCD170B96B300A20D65 /* progress_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = progress_bg.png; path = Images/progress_bg.png; sourceTree = "<group>"; };
+		41D9CBCE170B96B300A20D65 /* progress_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = progress_top.png; path = Images/progress_top.png; sourceTree = "<group>"; };
+		41D9CBCF170B96B300A20D65 /* progress_top@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "progress_top@2x.png"; path = "Images/progress_top@2x.png"; sourceTree = "<group>"; };
+		41D9CBD0170B96B300A20D65 /* progress_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "progress_bg@2x.png"; path = "Images/progress_bg@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +104,8 @@
 		41D9CB7F170B924D00A20D65 = {
 			isa = PBXGroup;
 			children = (
+				41A88F9A170BD007009AA4BE /* README.md */,
+				41A88F98170BCF16009AA4BE /* LICENSE.txt */,
 				41D9CB91170B924D00A20D65 /* CoffeeProgressBar */,
 				41D9CBB5170B924D00A20D65 /* CoffeeProgressBarTests */,
 				41D9CB8A170B924D00A20D65 /* Frameworks */,
@@ -117,6 +136,8 @@
 		41D9CB91170B924D00A20D65 /* CoffeeProgressBar */ = {
 			isa = PBXGroup;
 			children = (
+				41D9CBCC170B94E900A20D65 /* Images */,
+				41D9CBC6170B948A00A20D65 /* Classes */,
 				41D9CB9A170B924D00A20D65 /* AppDelegate.h */,
 				41D9CB9B170B924D00A20D65 /* AppDelegate.m */,
 				41D9CBA3170B924D00A20D65 /* MainStoryboard.storyboard */,
@@ -158,6 +179,27 @@
 				41D9CBB8170B924D00A20D65 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		41D9CBC6170B948A00A20D65 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				41D9CBC7170B94AB00A20D65 /* CoffeeProgressBar.h */,
+				41D9CBC8170B94AB00A20D65 /* CoffeeProgressBar.m */,
+				41D9CBCA170B94CA00A20D65 /* CoffeeProgressBar.xib */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		41D9CBCC170B94E900A20D65 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				41D9CBCD170B96B300A20D65 /* progress_bg.png */,
+				41D9CBCE170B96B300A20D65 /* progress_top.png */,
+				41D9CBCF170B96B300A20D65 /* progress_top@2x.png */,
+				41D9CBD0170B96B300A20D65 /* progress_bg@2x.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +278,13 @@
 				41D9CBA0170B924D00A20D65 /* Default@2x.png in Resources */,
 				41D9CBA2170B924D00A20D65 /* Default-568h@2x.png in Resources */,
 				41D9CBA5170B924D00A20D65 /* MainStoryboard.storyboard in Resources */,
+				41D9CBCB170B94CA00A20D65 /* CoffeeProgressBar.xib in Resources */,
+				41D9CBD1170B96B300A20D65 /* progress_bg.png in Resources */,
+				41D9CBD2170B96B300A20D65 /* progress_top.png in Resources */,
+				41D9CBD3170B96B300A20D65 /* progress_top@2x.png in Resources */,
+				41D9CBD4170B96B300A20D65 /* progress_bg@2x.png in Resources */,
+				41A88F99170BCF16009AA4BE /* LICENSE.txt in Resources */,
+				41A88F9B170BD007009AA4BE /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +322,7 @@
 				41D9CB98170B924D00A20D65 /* main.m in Sources */,
 				41D9CB9C170B924D00A20D65 /* AppDelegate.m in Sources */,
 				41D9CBA8170B924D00A20D65 /* ViewController.m in Sources */,
+				41D9CBC9170B94AB00A20D65 /* CoffeeProgressBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,6 +503,7 @@
 				41D9CBC2170B924D00A20D65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		41D9CBC3170B924D00A20D65 /* Build configuration list for PBXNativeTarget "CoffeeProgressBarTests" */ = {
 			isa = XCConfigurationList;
@@ -461,6 +512,7 @@
 				41D9CBC5170B924D00A20D65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
