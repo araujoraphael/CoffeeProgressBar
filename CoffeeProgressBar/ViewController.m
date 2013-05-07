@@ -24,11 +24,8 @@
 {
     [super viewDidLoad];
 
-    self.cfPbar = [[CoffeeProgressBar alloc] init];
-    
-    CGRect cfPbarframe = self.cfPbar.frame;
-    self.cfPbar.frame = CGRectMake(90, 200, cfPbarframe.size.width, cfPbarframe.size.height);
-    self.cfPbar.progress = floor(self.slider.value * 100);
+    self.cfPbar = [[CoffeeProgressBar alloc] initWithFrame:CGRectMake(90, 200, 0, 0)];
+        self.cfPbar.progress = floor(self.slider.value * 100);
     
     [self.view addSubview:self.cfPbar];
 }

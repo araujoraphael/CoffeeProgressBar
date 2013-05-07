@@ -3,6 +3,7 @@
 //  CoffeeProgressBar
 //
 //  Created by Raphael Araujo on 4/2/13.
+//  Updated by Raphael Araujo on 5/7/13.
 //  Copyright (c) 2013 Raphael Araujo. All rights reserved.
 //
 
@@ -13,23 +14,29 @@
 
 - (id)initWithFrame:(CGRect)frame
 {
-    self = [super initWithFrame:frame];
+    CGRect frameTmp = CGRectMake(frame.origin.x, frame.origin.y, 140.0 ,15.0 );
+    self = [super initWithFrame:frameTmp];
+    
     if (self) {
-        // Initialization code
-        self = [[[NSBundle mainBundle] loadNibNamed:@"CoffeeProgressBar" owner:self options:nil] objectAtIndex:0];
+        self.progress = 100;
+        self.progressLabel = [[UILabel alloc] initWithFrame:CGRectMake(49, -6, 42, 21)];
+        self.progressLabel.textColor = [UIColor whiteColor];
+        self.progressLabel.backgroundColor = [UIColor clearColor];
+        self.progressLabel.textAlignment = NSTextAlignmentCenter;
+        self.progressLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:14.0];
+        self.progressLabel.text = @"100%";
+        self.progressBarBgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"progress_bg"]];
         
-        [self setLabelShadow];
-        [self setViewShadow];
-    }
-    return self;
-}
-
-- (id) init
-{
-    self = [super init];
-    if(self) {
-        self = [[[NSBundle mainBundle] loadNibNamed:@"CoffeeProgressBar" owner:self options:nil] objectAtIndex:0];
-       
+        self.progressBarTopView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 140.0, 12.0)];
+        
+        self.progressBarTopView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"progress_top"]];
+        
+        [self addSubview:self.progressBarTopView];
+        [self addSubview:self.progressBarBgView];
+        [self addSubview:self.progressLabel];
+        
+        [self bringSubviewToFront:self.progressBarTopView];
+        [self bringSubviewToFront:self.progressLabel];
         [self setLabelShadow];
         [self setViewShadow];
     }
